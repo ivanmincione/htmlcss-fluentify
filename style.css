@@ -345,6 +345,8 @@ nav {
 .mobile-info{
     background: rgb(40,121,210);
     background: linear-gradient(90deg, rgba(40,121,210,1) 29%, rgba(6,26,196,0.12958686892725846) 100%);
+    position: relative;
+    padding-left: 50px;
 }
 
 .box-mobile{
@@ -375,3 +377,59 @@ nav {
 .img-mobile img{
     margin-left: 20px;
 }
+
+.img-decoration-mobile{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+}
+
+/* fine sezione mobile */
+
+/* inizio sezione secure */
+.row-secure{
+    position: relative;
+    padding-left: 50px;
+}
+
+.img-secure{
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+.img-secure img{
+    padding: 20px;
+}
+
+.box-secure{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.box-secure h3{
+    color:#011B50;
+    font-size: 40px;
+    margin:20px;
+    padding: 10px;
+}
+
+.box-secure p{
+color: silver;
+font: 20px;
+margin: 20px;
+padding: 10px;
+}
+
+.img-decoration-secure{
+    position: absolute;
+    top:0%;
+    right: 0%;
+    width: 200px;
+}
+
+/* fine sezione secure */
