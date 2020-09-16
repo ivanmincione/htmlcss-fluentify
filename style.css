@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+/* contenitore generale sezioni*/
+.container {
+    width: 1240px;
+    margin: auto;
+}
+/* classe clearfix generica da assegnare dove occorre */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* formattazione per i pulsanti uguali */
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #64DE82;
+    border: 2px solid #64DE82;
+    color: #337142;
+    text-decoration: none;
+    padding: 7px 14px;
+}
+
+.button:hover {
+    background-color: rgba(100,222,130,0.7);
+    border-color: rgba(100,222,130,0.7);
+    color: white;
+    font-weight: bold;
+}
+
+.button.button-login {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.button.button-login:hover {
+    color: #001A4F;
+    background-color: white;
+    transition: 1s;
+}
+/* formattazione generale dell'header (background e trasparenza) */
+header {
+    position: relative;
+    background-color: #031D51;
+    background-image: url('https://www.fluentify.com/home/wp-content/uploads/2020/01/fluentify-cover-privati-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+/* immagini di decoro laterali */
+header .img-decoration-left{
+    position: absolute;
+    z-index: 40;
+    width: 150px;
+    top: 0%;
+    left: 0%;
+}
+
+header .img-decoration-right{
+    position: absolute;
+    z-index: 40;
+    width: 100px;
+    top: -85px;
+    right: 0px;
+}
+/* pseudoelemento per impostare il velo di trasparenza sul background*/
+header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient (linear, right top, left top, from(transparent), to(#001A4F));
+    background: linear-gradient(270deg, transparent 0%, #001A4F 100%);
+}
+
+nav {
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+/* menu top sinistra */
+#header-menu {
+    float: left;
+    width: 70%;
+}
+
+.logo {
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: inline-block;
+    padding-top: 30px;
+    vertical-align: bottom;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu li.current-item a::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #64DE82;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    z-index: -1;
+}
+/* menu top destra */
+#header-buttons {
+    float: left;
+    width: 30%;
+    padding-top: 30px;
+    text-align: right;
+}
+
+#header-buttons a {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#header-buttons .button-login {
+    margin-right: 20px;
+}
+
+#header-buttons .choose-language {
+    color: white;
+    text-decoration: none;
+}
+/* sezione jumbotron con titoli e pulsante */
+#jumbotron {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron-content {
+    width: 50%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.jumbotron-content h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.jumbotron-content h1 {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.jumbotron-content p {
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+/* inizio main */
+
+.box-img{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-top: 60px;
+
+}
+/* immagine che si sovrappone al bordo left del container */
+.box-img img{
+    position: relative;
+    top: 50%;
+    left: -10%;
+    padding-top: 60px;
+}
+/* box di destra */
+.box{
+    float: left;
+    width: 45%;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.box h2{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #737373;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.box h2 span{
+    color: #65DE82;
+}
+.box h3{
+    color: #011B50;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.box p{
+    color: silver;
+    letter-spacing: 1px;
+}
+
+.box hr{
+    margin: 25px 0;
+}
+/* immagine di decoro bordo destro */
+#img-decoration-main{
+    position: absolute;
+    z-index: 40;
+    width: 150px;
+    top: 800px;
+    right: 0px;
+
+}
