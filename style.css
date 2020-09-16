@@ -269,7 +269,6 @@ nav {
     font-size: 40px;
     color: #939393;
     margin-bottom: 50px;
-
 }
 
 .dispositivi{
@@ -293,7 +292,6 @@ nav {
 .dispositivi p{
     color: silver;
     text-align: center;
-
 }
 
 .profilo{
@@ -317,7 +315,6 @@ nav {
 .profilo p{
     color: silver;
     text-align: center;
-
 }
 
 .browser{
@@ -344,3 +341,37 @@ nav {
 }
 
 /* fine sezione row-info */
+
+.mobile-info{
+    background: rgb(40,121,210);
+    background: linear-gradient(90deg, rgba(40,121,210,1) 29%, rgba(6,26,196,0.12958686892725846) 100%);
+}
+
+.box-mobile{
+    float: left;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-mobile h2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding:10px 0;
+}
+
+.box-mobile p{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.img-mobile{
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+.img-mobile img{
+    margin-left: 20px;
+}
