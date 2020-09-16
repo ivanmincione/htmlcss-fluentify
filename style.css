@@ -255,5 +255,92 @@ nav {
     width: 150px;
     top: 800px;
     right: 0px;
+}
+
+/* inizio sezione row-info */
+
+.row-info{
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.row-info h2{
+    text-align: center;
+    font-size: 40px;
+    color: #939393;
+    margin-bottom: 50px;
 
 }
+
+.dispositivi{
+    width: 30%;
+    float: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+.dispositivi img{
+    padding-left: 50px;
+}
+
+.dispositivi h3{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    color: #011B50;
+}
+
+.dispositivi p{
+    color: silver;
+    text-align: center;
+
+}
+
+.profilo{
+    width: 30%;
+    float: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+.profilo img{
+    padding-left: 50px;
+}
+
+.profilo h3{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    color: #011B50;
+}
+
+.profilo p{
+    color: silver;
+    text-align: center;
+
+}
+
+.browser{
+    width: 30%;
+    float: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+.browser img{
+    padding-left: 50px;
+}
+
+.browser h3{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    color: #011B50;
+}
+
+.browser p{
+    color: silver;
+    text-align: center;
+}
+
+/* fine sezione row-info */
