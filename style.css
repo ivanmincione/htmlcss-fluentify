@@ -433,3 +433,36 @@ padding: 10px;
 }
 
 /* fine sezione secure */
+
+/* inizio row bottom */
+
+.row-bottom{
+    background: rgb(33,11,232);
+    background: linear-gradient(90deg, rgba(33,11,232,1) 29%, rgba(9,215,244,0.6365896700477065) 100%);
+    padding: 20px 50px;
+
+}
+
+.row-bottom-left{
+    float: left;
+    width: 40%;
+    margin-left: 40px;
+
+}
+
+.row-bottom-left h2{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.row-bottom-right{
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+}
+
+.row-bottom-right p{
+    color: white;
+    padding: 20px 0;
+}
