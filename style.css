@@ -171,6 +171,33 @@ nav {
     color: white;
     text-decoration: none;
 }
+
+.language{
+    float: right;
+    position: relative;
+}
+/* menu a tendina per scelta lingua */
+.drop-link-language{
+    display:none;
+    position: absolute;
+    background: #2A4781;
+    border-radius: 10px;
+    float: left;
+
+}
+
+.drop-link-language a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.language:hover .drop-link-language{
+    display: block;
+}
+
+
 /* sezione jumbotron con titoli e pulsante */
 #jumbotron {
     position: relative;
@@ -271,80 +298,35 @@ nav {
     margin-bottom: 50px;
 }
 
-.dispositivi{
+.row-info .box-info{
     width: 30%;
     float: left;
     margin: 20px;
     padding: 10px;
 }
 
-.dispositivi img{
-    padding-left: 50px;
+.row-info .box-info img{
+    display: block;
+    margin: auto;
 }
 
-.dispositivi h3{
+.row-info .box-info h3{
     font-size: 25px;
     margin: 10px;
     text-align: center;
     color: #011B50;
 }
 
-.dispositivi p{
-    color: silver;
-    text-align: center;
-}
-
-.profilo{
-    width: 30%;
-    float: left;
-    margin: 20px;
-    padding: 10px;
-}
-
-.profilo img{
-    padding-left: 50px;
-}
-
-.profilo h3{
-    font-size: 25px;
-    margin: 10px;
-    text-align: center;
-    color: #011B50;
-}
-
-.profilo p{
-    color: silver;
-    text-align: center;
-}
-
-.browser{
-    width: 30%;
-    float: left;
-    margin: 20px;
-    padding: 10px;
-}
-
-.browser img{
-    padding-left: 50px;
-}
-
-.browser h3{
-    font-size: 25px;
-    margin: 10px;
-    text-align: center;
-    color: #011B50;
-}
-
-.browser p{
+.row-info .box-info p{
     color: silver;
     text-align: center;
 }
 
 /* fine sezione row-info */
 
+/* inizio sezione mobile */
 .mobile-info{
-    background: rgb(40,121,210);
-    background: linear-gradient(90deg, rgba(40,121,210,1) 29%, rgba(6,26,196,0.12958686892725846) 100%);
+    background-color: #011B50;
     position: relative;
     padding-left: 50px;
 }
@@ -366,18 +348,21 @@ nav {
 .box-mobile p{
     color: white;
     font-size: 20px;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 
 .img-mobile{
     float: left;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;
+    padding: 20px; */
 }
 .img-mobile img{
-    margin-left: 20px;
+    margin-left: 30px;
+
+    display: block;
 }
 
+/* immagine di decoro */
 .img-decoration-mobile{
     position: absolute;
     top: 0%;
@@ -437,8 +422,7 @@ padding: 10px;
 /* inizio row bottom */
 
 .row-bottom{
-    background: rgb(33,11,232);
-    background: linear-gradient(90deg, rgba(33,11,232,1) 29%, rgba(9,215,244,0.6365896700477065) 100%);
+    background-color: #2A4781;
     padding: 20px 50px;
 
 }
@@ -478,6 +462,7 @@ footer{
 .row-footer{
     height: 200px;
     border-bottom: 1px solid white;
+    margin-top: 20px;
 
 }
 
@@ -535,14 +520,19 @@ footer{
 }
 
 .footer-bottom-left i{
-    font-size: 30px;
-    background-color: white;
+    font-size: 25px;
+    color: #65DE82;
     margin: 20px;
+}
+
+.footer-bottom-left i:hover{
+    color: #337142;
+    cursor: pointer;
 }
 
 .footer-bottom-right{
     float: left;
-    
+
     padding-top: 100px;
 
 }
@@ -556,4 +546,13 @@ footer{
 .footer-bottom-right a{
     text-decoration: none;
     color: white;
+}
+
+#title-column:hover{
+    color: silver;
+    cursor: text;
+}
+
+footer a:hover{
+    color: #337142;
 }
